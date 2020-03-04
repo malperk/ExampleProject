@@ -27,6 +27,8 @@
 		B9CE4675241047EF007CF966 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CE4673241047EF007CF966 /* LoginViewController.xib */; };
 		B9CE467724104943007CF966 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE467624104943007CF966 /* LoginInteractor.swift */; };
 		B9CE467924104C5A007CF966 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE467824104C5A007CF966 /* LoginInteractorTests.swift */; };
+		B9CE467D24104D68007CF966 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE467B24104D68007CF966 /* ConfirmationViewController.swift */; };
+		B9CE467E24104D68007CF966 /* ConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CE467C24104D68007CF966 /* ConfirmationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		B9CE4673241047EF007CF966 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		B9CE467624104943007CF966 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		B9CE467824104C5A007CF966 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		B9CE467B24104D68007CF966 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		B9CE467C24104D68007CF966 /* ConfirmationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,7 @@
 		B9CE4670241047CC007CF966 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B9CE467A24104D4D007CF966 /* Confirmation */,
 				B9CE4671241047DD007CF966 /* Login */,
 				B9CE464C24103009007CF966 /* Connection */,
 			);
@@ -208,6 +213,15 @@
 				B9CE467624104943007CF966 /* LoginInteractor.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		B9CE467A24104D4D007CF966 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				B9CE467B24104D68007CF966 /* ConfirmationViewController.swift */,
+				B9CE467C24104D68007CF966 /* ConfirmationViewController.xib */,
+			);
+			path = Confirmation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +308,7 @@
 				B9CE4675241047EF007CF966 /* LoginViewController.xib in Resources */,
 				B9CE46502410304C007CF966 /* ConnectionViewController.xib in Resources */,
 				B9CE463724102F4E007CF966 /* LaunchScreen.storyboard in Resources */,
+				B9CE467E24104D68007CF966 /* ConfirmationViewController.xib in Resources */,
 				B9CE463424102F4E007CF966 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +338,7 @@
 				B9CE467724104943007CF966 /* LoginInteractor.swift in Sources */,
 				B9CE466324103BBC007CF966 /* ConnectionInteractor.swift in Sources */,
 				B9CE462B24102F4D007CF966 /* AppDelegate.swift in Sources */,
+				B9CE467D24104D68007CF966 /* ConfirmationViewController.swift in Sources */,
 				B9CE4674241047EF007CF966 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
