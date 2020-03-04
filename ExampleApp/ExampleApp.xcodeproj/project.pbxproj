@@ -11,8 +11,8 @@
 		B9CE463424102F4E007CF966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CE463324102F4E007CF966 /* Assets.xcassets */; };
 		B9CE463724102F4E007CF966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CE463524102F4E007CF966 /* LaunchScreen.storyboard */; };
 		B9CE464224102F4E007CF966 /* ExampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE464124102F4E007CF966 /* ExampleAppTests.swift */; };
-		B9CE464F2410304C007CF966 /* IPSaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE464D2410304C007CF966 /* IPSaveViewController.swift */; };
-		B9CE46502410304C007CF966 /* IPSaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CE464E2410304C007CF966 /* IPSaveViewController.xib */; };
+		B9CE464F2410304C007CF966 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE464D2410304C007CF966 /* ConnectionViewController.swift */; };
+		B9CE46502410304C007CF966 /* ConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CE464E2410304C007CF966 /* ConnectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +34,8 @@
 		B9CE463D24102F4E007CF966 /* ExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CE464124102F4E007CF966 /* ExampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAppTests.swift; sourceTree = "<group>"; };
 		B9CE464324102F4E007CF966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9CE464D2410304C007CF966 /* IPSaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPSaveViewController.swift; sourceTree = "<group>"; };
-		B9CE464E2410304C007CF966 /* IPSaveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IPSaveViewController.xib; sourceTree = "<group>"; };
+		B9CE464D2410304C007CF966 /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
+		B9CE464E2410304C007CF966 /* ConnectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,8 @@
 		B9CE462924102F4D007CF966 /* ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				B9CE464C24103009007CF966 /* IPSave */,
+				B9CE46512410320D007CF966 /* Protocols */,
+				B9CE464C24103009007CF966 /* Connection */,
 				B9CE462A24102F4D007CF966 /* AppDelegate.swift */,
 				B9CE463324102F4E007CF966 /* Assets.xcassets */,
 				B9CE463524102F4E007CF966 /* LaunchScreen.storyboard */,
@@ -95,13 +96,20 @@
 			path = ExampleAppTests;
 			sourceTree = "<group>";
 		};
-		B9CE464C24103009007CF966 /* IPSave */ = {
+		B9CE464C24103009007CF966 /* Connection */ = {
 			isa = PBXGroup;
 			children = (
-				B9CE464D2410304C007CF966 /* IPSaveViewController.swift */,
-				B9CE464E2410304C007CF966 /* IPSaveViewController.xib */,
+				B9CE464D2410304C007CF966 /* ConnectionViewController.swift */,
+				B9CE464E2410304C007CF966 /* ConnectionViewController.xib */,
 			);
-			path = IPSave;
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		B9CE46512410320D007CF966 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9CE46502410304C007CF966 /* IPSaveViewController.xib in Resources */,
+				B9CE46502410304C007CF966 /* ConnectionViewController.xib in Resources */,
 				B9CE463724102F4E007CF966 /* LaunchScreen.storyboard in Resources */,
 				B9CE463424102F4E007CF966 /* Assets.xcassets in Resources */,
 			);
@@ -205,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9CE464F2410304C007CF966 /* IPSaveViewController.swift in Sources */,
+				B9CE464F2410304C007CF966 /* ConnectionViewController.swift in Sources */,
 				B9CE462B24102F4D007CF966 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
