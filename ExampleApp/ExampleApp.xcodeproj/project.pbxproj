@@ -19,6 +19,7 @@
 		B9CE465A24103557007CF966 /* Validating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE465924103557007CF966 /* Validating.swift */; };
 		B9CE465D24103852007CF966 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE465C24103852007CF966 /* AlertController.swift */; };
 		B9CE466024103A1F007CF966 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE465F24103A1F007CF966 /* AppError.swift */; };
+		B9CE466324103BBC007CF966 /* ConnectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE466224103BBC007CF966 /* ConnectionInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		B9CE465924103557007CF966 /* Validating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validating.swift; sourceTree = "<group>"; };
 		B9CE465C24103852007CF966 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		B9CE465F24103A1F007CF966 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		B9CE466224103BBC007CF966 /* ConnectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				B9CE464D2410304C007CF966 /* ConnectionViewController.swift */,
 				B9CE464E2410304C007CF966 /* ConnectionViewController.xib */,
+				B9CE466224103BBC007CF966 /* ConnectionInteractor.swift */,
 			);
 			path = Connection;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				B9CE466024103A1F007CF966 /* AppError.swift in Sources */,
 				B9CE465D24103852007CF966 /* AlertController.swift in Sources */,
 				B9CE464F2410304C007CF966 /* ConnectionViewController.swift in Sources */,
+				B9CE466324103BBC007CF966 /* ConnectionInteractor.swift in Sources */,
 				B9CE462B24102F4D007CF966 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ConnectionViewController: UIViewController {
+final class ConnectionViewController: UIViewController {
     
     @IBOutlet private var ipTextField: UITextField!
     
