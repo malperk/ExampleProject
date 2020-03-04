@@ -38,6 +38,6 @@ final class ConnectionInteractor: AnonymousServerConnecting & ViewStateProviding
                 self?.viewState = .error(error)
             }
         }
-        
     }
+    
 }

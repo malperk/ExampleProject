@@ -37,7 +37,6 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="IWD-rP-cEH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BkD-Tl-Uec"/>
                 <constraint firstItem="1GU-h0-nk3" firstAttribute="trailing" secondItem="IWD-rP-cEH" secondAttribute="trailing" id="LV3-rc-Od1"/>
                 <constraint firstItem="1GU-h0-nk3" firstAttribute="top" secondItem="IWD-rP-cEH" secondAttribute="bottom" constant="40" id="alW-V7-gj7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IWD-rP-cEH" secondAttribute="trailing" constant="50" id="d8X-v9-rpW"/>

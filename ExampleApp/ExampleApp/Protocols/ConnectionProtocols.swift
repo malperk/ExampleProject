@@ -15,5 +15,5 @@ protocol AnonymousServerConnecting {
 
 
 protocol ServerConnecting {
-    func connect(ipAddress: String, username: String, password: String)
+    func connect(username: String, password: String)
 }

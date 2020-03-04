@@ -1,5 +1,5 @@
 //
-//  ConnectionInteractorTests.swift
+//  LoginInteractorTests.swift
 //  ExampleAppTests
 //
 //  Created by Alper Karatas on 04/03/2020.
@@ -9,16 +9,16 @@
 import XCTest
 @testable import ExampleApp
 
-class ConnectionInteractorTests: XCTestCase {
+class LoginInteractorTests: XCTestCase {
     
-    var interactor: ConnectionInteractor!
+    var interactor: LoginInteractor!
     var networking: MockNetworking!
     var router: MockMainRouter!
     
     override func setUp() {
         networking = MockNetworking()
         router = MockMainRouter()
-        interactor = ConnectionInteractor(networking: networking, router: router)
+        interactor = LoginInteractor(ipAddress: "", networking: networking, router: router)
     }
     
     func testOnViewStateChange_WhenViewStateChanged_OnViewStateChangeCalledWithCorrectViewState(){
@@ -39,23 +39,12 @@ class ConnectionInteractorTests: XCTestCase {
         // Given
         networking.connectToServerResponse = NetworkingResponse(success: true, code: 200, message: "")
         // When
-        interactor.connect(ipAddress: "")
+        interactor.connect(username: "", password: "")
         // Then
         XCTAssertEqual(router.lastRoute, MainRouter.Route.confirmation)
         
     }
     
-    
-    func testConnect_WhenRetuns401_RouteToLoginWithIPAddress(){
-        // Given
-        let ipAddress = "42"
-        networking.connectToServerResponse = NetworkingResponse(success: true, code: 401, message: "")
-        // When
-        interactor.connect(ipAddress: ipAddress)
-        // Then
-        XCTAssertEqual(router.lastRoute, MainRouter.Route.login(ipAddress))
-    }
-
     
     func testConnect_WhenRetuns0_OnViewStateChangeCalledWithCorrectViewState(){
         // Given
@@ -66,7 +55,7 @@ class ConnectionInteractorTests: XCTestCase {
         let message = "42"
         networking.connectToServerResponse = NetworkingResponse(success: true, code: 0, message: message)
         // When
-        interactor.connect(ipAddress: "")
+        interactor.connect(username: "", password: "")
         // Then
         guard let viewState = expectedViewState, case let ViewState.error(error) = viewState else {
             XCTFail("Should get an error state")
@@ -76,3 +65,4 @@ class ConnectionInteractorTests: XCTestCase {
     }
 
 }
+

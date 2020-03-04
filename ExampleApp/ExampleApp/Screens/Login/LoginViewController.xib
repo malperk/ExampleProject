@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ExampleApp" customModuleProvider="target">
+            <connections>
+                <outlet property="passwordTextField" destination="MOd-gH-nmQ" id="mZK-le-qwP"/>
+                <outlet property="usernameTextField" destination="BXe-eB-nof" id="eOb-lI-uBT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BXe-eB-nof">
+                    <rect key="frame" x="50" y="94" width="314" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOd-gH-nmQ">
+                    <rect key="frame" x="50" y="168" width="314" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="iaG-cu-gid">
+                    <rect key="frame" x="90" y="242" width="234" height="28"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRw-cV-mte">
+                            <rect key="frame" x="0.0" y="0.0" width="92" height="28"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="5" maxX="20" maxY="5"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelClick:" destination="-1" eventType="touchUpInside" id="o7z-DX-WxE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lx9-N1-emi">
+                            <rect key="frame" x="142" y="0.0" width="92" height="28"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="5" maxX="20" maxY="5"/>
+                            <state key="normal" title="Ok">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="loginClick:" destination="-1" eventType="touchUpInside" id="VpU-td-PZt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iaG-cu-gid" firstAttribute="leading" secondItem="BXe-eB-nof" secondAttribute="leading" constant="40" id="4SO-fB-Mv2"/>
+                <constraint firstItem="iaG-cu-gid" firstAttribute="top" secondItem="MOd-gH-nmQ" secondAttribute="bottom" constant="40" id="7eh-Em-4yp"/>
+                <constraint firstItem="iaG-cu-gid" firstAttribute="trailing" secondItem="BXe-eB-nof" secondAttribute="trailing" constant="-40" id="Qd3-Fd-zZO"/>
+                <constraint firstItem="BXe-eB-nof" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="e7f-eW-cHA"/>
+                <constraint firstItem="MOd-gH-nmQ" firstAttribute="top" secondItem="BXe-eB-nof" secondAttribute="bottom" constant="40" id="feR-BK-PUw"/>
+                <constraint firstItem="MOd-gH-nmQ" firstAttribute="trailing" secondItem="BXe-eB-nof" secondAttribute="trailing" id="mMw-8H-NN8"/>
+                <constraint firstItem="MOd-gH-nmQ" firstAttribute="leading" secondItem="BXe-eB-nof" secondAttribute="leading" id="pY1-KT-AuR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BXe-eB-nof" secondAttribute="trailing" constant="50" id="tUu-a9-Q6Q"/>
+                <constraint firstItem="BXe-eB-nof" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="vs7-tp-xfD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>
