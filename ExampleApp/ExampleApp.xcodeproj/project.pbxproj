@@ -13,6 +13,11 @@
 		B9CE464224102F4E007CF966 /* ExampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE464124102F4E007CF966 /* ExampleAppTests.swift */; };
 		B9CE464F2410304C007CF966 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE464D2410304C007CF966 /* ConnectionViewController.swift */; };
 		B9CE46502410304C007CF966 /* ConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CE464E2410304C007CF966 /* ConnectionViewController.xib */; };
+		B9CE4654241032FF007CF966 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE4653241032FF007CF966 /* Networking.swift */; };
+		B9CE465624103335007CF966 /* ConnectionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE465524103335007CF966 /* ConnectionProtocols.swift */; };
+		B9CE465824103435007CF966 /* ViewStateProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE465724103435007CF966 /* ViewStateProviding.swift */; };
+		B9CE465A24103557007CF966 /* Validating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE465924103557007CF966 /* Validating.swift */; };
+		B9CE465D24103852007CF966 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE465C24103852007CF966 /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		B9CE464324102F4E007CF966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9CE464D2410304C007CF966 /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 		B9CE464E2410304C007CF966 /* ConnectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectionViewController.xib; sourceTree = "<group>"; };
+		B9CE4653241032FF007CF966 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		B9CE465524103335007CF966 /* ConnectionProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionProtocols.swift; sourceTree = "<group>"; };
+		B9CE465724103435007CF966 /* ViewStateProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStateProviding.swift; sourceTree = "<group>"; };
+		B9CE465924103557007CF966 /* Validating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validating.swift; sourceTree = "<group>"; };
+		B9CE465C24103852007CF966 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,9 @@
 		B9CE462924102F4D007CF966 /* ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				B9CE465E2410399D007CF966 /* NetworkingError */,
+				B9CE465B241037CF007CF966 /* AlertController */,
+				B9CE4652241032F0007CF966 /* Nerworking */,
 				B9CE46512410320D007CF966 /* Protocols */,
 				B9CE464C24103009007CF966 /* Connection */,
 				B9CE462A24102F4D007CF966 /* AppDelegate.swift */,
@@ -108,8 +121,34 @@
 		B9CE46512410320D007CF966 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				B9CE465524103335007CF966 /* ConnectionProtocols.swift */,
+				B9CE465724103435007CF966 /* ViewStateProviding.swift */,
+				B9CE465924103557007CF966 /* Validating.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B9CE4652241032F0007CF966 /* Nerworking */ = {
+			isa = PBXGroup;
+			children = (
+				B9CE4653241032FF007CF966 /* Networking.swift */,
+			);
+			path = Nerworking;
+			sourceTree = "<group>";
+		};
+		B9CE465B241037CF007CF966 /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				B9CE465C24103852007CF966 /* AlertController.swift */,
+			);
+			path = AlertController;
+			sourceTree = "<group>";
+		};
+		B9CE465E2410399D007CF966 /* NetworkingError */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkingError;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +252,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CE465824103435007CF966 /* ViewStateProviding.swift in Sources */,
+				B9CE4654241032FF007CF966 /* Networking.swift in Sources */,
+				B9CE465A24103557007CF966 /* Validating.swift in Sources */,
+				B9CE465624103335007CF966 /* ConnectionProtocols.swift in Sources */,
+				B9CE465D24103852007CF966 /* AlertController.swift in Sources */,
 				B9CE464F2410304C007CF966 /* ConnectionViewController.swift in Sources */,
 				B9CE462B24102F4D007CF966 /* AppDelegate.swift in Sources */,
 			);
