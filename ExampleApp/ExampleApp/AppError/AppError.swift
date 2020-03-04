@@ -6,7 +6,7 @@
 //  Copyright © 2020 Alper Karatas. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct AppError {
     let innerError: Error?
@@ -22,10 +22,15 @@ extension AppError: Equatable {
 extension AppError {
     var alertController: AlertController? {
         guard let alertText = message else { return nil }
-        return AlertController(
+        let alert = AlertController(
             title: "Error",
             message: alertText,
             preferredStyle: .alert
         )
+        let ok = UIAlertAction(title: "Ok", style: .default) { _ in
+            alert.dismiss(animated: true, completion: nil)
+        }
+        alert.addAction(ok)
+        return alert
     }
 }

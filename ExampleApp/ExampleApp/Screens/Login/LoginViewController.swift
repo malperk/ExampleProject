@@ -69,11 +69,7 @@ class LoginViewController: UIViewController {
     }
     
     private func showValidationAlert(message: String) {
-        let alertController = AlertController(
-            title: "Error",
-            message: message,
-            preferredStyle: .alert
-        )
+        guard let alertController = AppError(innerError: nil, message: message).alertController else { return }
         alertController.presentInNewWindow()
     }
 }

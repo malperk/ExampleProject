@@ -50,11 +50,12 @@ final class ConnectionViewController: UIViewController {
     }
     
     private func showIPValidationAlert() {
-        let alertController = AlertController(
-            title: "Error",
-            message: "Please control your IP value",
-            preferredStyle: .alert
-        )
+        guard let alertController = AppError(
+            innerError: nil,
+            message: "Please control your IP value"
+        ).alertController else {
+            return
+        }
         alertController.presentInNewWindow()
     }
     
