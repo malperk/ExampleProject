@@ -29,6 +29,8 @@
 		B9CE467924104C5A007CF966 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE467824104C5A007CF966 /* LoginInteractorTests.swift */; };
 		B9CE467D24104D68007CF966 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE467B24104D68007CF966 /* ConfirmationViewController.swift */; };
 		B9CE467E24104D68007CF966 /* ConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CE467C24104D68007CF966 /* ConfirmationViewController.xib */; };
+		B9CE468124104EA1007CF966 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE468024104EA1007CF966 /* Validators.swift */; };
+		B9CE468324104F29007CF966 /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE468224104F29007CF966 /* ValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		B9CE467824104C5A007CF966 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		B9CE467B24104D68007CF966 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		B9CE467C24104D68007CF966 /* ConfirmationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationViewController.xib; sourceTree = "<group>"; };
+		B9CE468024104EA1007CF966 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		B9CE468224104F29007CF966 /* ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		B9CE462924102F4D007CF966 /* ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				B9CE467F24104E8B007CF966 /* Validators */,
 				B9CE4670241047CC007CF966 /* Screens */,
 				B9CE466B2410418E007CF966 /* Routing */,
 				B9CE465E2410399D007CF966 /* AppError */,
@@ -129,6 +134,7 @@
 				B9CE466624103E21007CF966 /* Mocks */,
 				B9CE466424103DE9007CF966 /* ConnectionInteractorTests.swift */,
 				B9CE467824104C5A007CF966 /* LoginInteractorTests.swift */,
+				B9CE468224104F29007CF966 /* ValidatorTests.swift */,
 				B9CE464324102F4E007CF966 /* Info.plist */,
 			);
 			path = ExampleAppTests;
@@ -222,6 +228,14 @@
 				B9CE467C24104D68007CF966 /* ConfirmationViewController.xib */,
 			);
 			path = Confirmation;
+			sourceTree = "<group>";
+		};
+		B9CE467F24104E8B007CF966 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				B9CE468024104EA1007CF966 /* Validators.swift */,
+			);
+			path = Validators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +349,7 @@
 				B9CE466024103A1F007CF966 /* AppError.swift in Sources */,
 				B9CE465D24103852007CF966 /* AlertController.swift in Sources */,
 				B9CE464F2410304C007CF966 /* ConnectionViewController.swift in Sources */,
+				B9CE468124104EA1007CF966 /* Validators.swift in Sources */,
 				B9CE467724104943007CF966 /* LoginInteractor.swift in Sources */,
 				B9CE466324103BBC007CF966 /* ConnectionInteractor.swift in Sources */,
 				B9CE462B24102F4D007CF966 /* AppDelegate.swift in Sources */,
@@ -348,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9CE467924104C5A007CF966 /* LoginInteractorTests.swift in Sources */,
+				B9CE468324104F29007CF966 /* ValidatorTests.swift in Sources */,
 				B9CE466524103DE9007CF966 /* ConnectionInteractorTests.swift in Sources */,
 				B9CE466F241043D3007CF966 /* MockMainRouter.swift in Sources */,
 				B9CE466A24103E8C007CF966 /* MockNetworking.swift in Sources */,
