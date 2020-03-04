@@ -13,7 +13,7 @@ class ValidatorTests: XCTestCase {
     
     func testIPValidatorValidate_WhenIsValid_ReturnsTrue(){
         // Given
-        let ip = "192.168.1.10"
+        let ip = "192.268.0.11"
         let validator = IPValidator()
         // When
         let result = validator.validate(string: ip)

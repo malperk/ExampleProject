@@ -44,7 +44,12 @@ class LoginViewController: UIViewController {
     
     private func handleStateChange(_ state: ViewState) {
         switch state {
-        case .ready, .loading, .empty:
+        case .loading:
+            // TODO: add a loading indicator.
+            view.isUserInteractionEnabled = false
+        case .ready:
+            view.isUserInteractionEnabled = true
+        case .empty:
             break
         case .error(let error):
             guard let alertController = error.alertController else { break }

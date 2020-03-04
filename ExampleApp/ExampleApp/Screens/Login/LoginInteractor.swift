@@ -29,8 +29,10 @@ final class LoginInteractor: ServerConnecting & ViewStateProviding {
     }
     
     func connect(username: String, password: String) {
+        viewState = .loading
         let credentials = Credentials(username: username, password: password)
         networking.connectToServer(ipAddress: ipAddress, credentials: credentials) { [weak self] response in
+        self?.viewState = .ready
             if response.code == 200 {
                 self?.router.route(to: .confirmation)
             } else {

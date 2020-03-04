@@ -10,7 +10,8 @@ import Foundation
 
 
 struct IPValidator: StringValidating {
-    private let pattern =  "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$"
+    // This regex is not mine. I had to change it because "192.268.0.11" is not a valid ip address.
+    private let pattern =  "^(([0-9]|[1-9][0-9]|[1-9][0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$"
     func validate(string: String) -> Bool {
         let predicate = NSPredicate(format:"SELF MATCHES %@", pattern)
         return predicate.evaluate(with: string)

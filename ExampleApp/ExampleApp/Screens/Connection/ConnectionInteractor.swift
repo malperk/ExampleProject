@@ -28,7 +28,9 @@ final class ConnectionInteractor: AnonymousServerConnecting & ViewStateProviding
     }
     
     func connect(ipAddress: String) {
+        viewState = .loading
         networking.connectToServer(ipAddress: ipAddress, credentials: nil) { [weak self] response in
+            self?.viewState = .ready
             if response.code == 200 {
                 self?.router.route(to: .confirmation)
             } else if response.code == 401 {
