@@ -27,11 +27,28 @@ class MainRouter: Routing {
     }
 
     init(window: UIWindow?) {
-
+        let rootViewController = ConnectionViewController(
+            interactor: ConnectionInteractor(networking: Networking.sharedInstance, router: self),
+            ipValidator: IPValidator()
+        )
+        navigationController = UINavigationController(rootViewController: rootViewController)
+        window?.rootViewController = navigationController
     }
 
     func route(to route: Route) {
-
+        switch route {
+        case .login(let ipAddress):
+            let interactor = LoginInteractor(ipAddress: ipAddress, networking: Networking.sharedInstance, router: self)
+            let viewController = LoginViewController(
+                interactor: interactor,
+                usernameValidator: UsernameValidator(),
+                passwordValidator: PasswordValidator()
+            )
+            push(viewController: viewController)
+        case .confirmation:
+            push(viewController: ConfirmationViewController())
+        }
+        
     }
 
     private func push(viewController: UIViewController) {
