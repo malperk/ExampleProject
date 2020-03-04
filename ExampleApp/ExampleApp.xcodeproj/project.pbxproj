@@ -10,7 +10,6 @@
 		B9CE462B24102F4D007CF966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE462A24102F4D007CF966 /* AppDelegate.swift */; };
 		B9CE463424102F4E007CF966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CE463324102F4E007CF966 /* Assets.xcassets */; };
 		B9CE463724102F4E007CF966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CE463524102F4E007CF966 /* LaunchScreen.storyboard */; };
-		B9CE464224102F4E007CF966 /* ExampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE464124102F4E007CF966 /* ExampleAppTests.swift */; };
 		B9CE464F2410304C007CF966 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE464D2410304C007CF966 /* ConnectionViewController.swift */; };
 		B9CE46502410304C007CF966 /* ConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CE464E2410304C007CF966 /* ConnectionViewController.xib */; };
 		B9CE4654241032FF007CF966 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE4653241032FF007CF966 /* Networking.swift */; };
@@ -20,6 +19,8 @@
 		B9CE465D24103852007CF966 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE465C24103852007CF966 /* AlertController.swift */; };
 		B9CE466024103A1F007CF966 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE465F24103A1F007CF966 /* AppError.swift */; };
 		B9CE466324103BBC007CF966 /* ConnectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE466224103BBC007CF966 /* ConnectionInteractor.swift */; };
+		B9CE466524103DE9007CF966 /* ConnectionInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE466424103DE9007CF966 /* ConnectionInteractorTests.swift */; };
+		B9CE466A24103E8C007CF966 /* MockNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE466924103E8C007CF966 /* MockNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		B9CE463624102F4E007CF966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9CE463824102F4E007CF966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9CE463D24102F4E007CF966 /* ExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9CE464124102F4E007CF966 /* ExampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAppTests.swift; sourceTree = "<group>"; };
 		B9CE464324102F4E007CF966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9CE464D2410304C007CF966 /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 		B9CE464E2410304C007CF966 /* ConnectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectionViewController.xib; sourceTree = "<group>"; };
@@ -50,6 +50,8 @@
 		B9CE465C24103852007CF966 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		B9CE465F24103A1F007CF966 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		B9CE466224103BBC007CF966 /* ConnectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionInteractor.swift; sourceTree = "<group>"; };
+		B9CE466424103DE9007CF966 /* ConnectionInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionInteractorTests.swift; sourceTree = "<group>"; };
+		B9CE466924103E8C007CF966 /* MockNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,8 @@
 		B9CE464024102F4E007CF966 /* ExampleAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				B9CE464124102F4E007CF966 /* ExampleAppTests.swift */,
+				B9CE466624103E21007CF966 /* Mocks */,
+				B9CE466424103DE9007CF966 /* ConnectionInteractorTests.swift */,
 				B9CE464324102F4E007CF966 /* Info.plist */,
 			);
 			path = ExampleAppTests;
@@ -155,6 +158,14 @@
 				B9CE465F24103A1F007CF966 /* AppError.swift */,
 			);
 			path = AppError;
+			sourceTree = "<group>";
+		};
+		B9CE466624103E21007CF966 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B9CE466924103E8C007CF966 /* MockNetworking.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9CE464224102F4E007CF966 /* ExampleAppTests.swift in Sources */,
+				B9CE466524103DE9007CF966 /* ConnectionInteractorTests.swift in Sources */,
+				B9CE466A24103E8C007CF966 /* MockNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

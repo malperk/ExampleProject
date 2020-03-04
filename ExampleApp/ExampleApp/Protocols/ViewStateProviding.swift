@@ -10,7 +10,7 @@ import Foundation
 
 
 /// Enum describing the available states of a view
-enum ViewState {
+enum ViewState: Equatable {
     /// Initial state and state where no data is available
     case empty
     /// State when the data is being loaded

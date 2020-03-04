@@ -13,6 +13,11 @@ struct AppError {
     let message: String?
 }
 
+extension AppError: Equatable {
+    static func == (lhs: AppError, rhs: AppError) -> Bool {
+        return lhs.message == rhs.message
+    }
+}
 
 extension AppError {
     var alertController: AlertController? {
