@@ -41,12 +41,11 @@ class ConnectionViewController: UIViewController {
     
     private func handleStateChange(_ state: ViewState) {
         switch state {
-        case .ready:
+        case .ready, .loading, .empty:
             break
         case .error(let error):
-            print(error)
-        case .loading, .empty:
-            break
+            guard let alertController = error.alertController else { break }
+            alertController.presentInNewWindow()
         }
     }
     

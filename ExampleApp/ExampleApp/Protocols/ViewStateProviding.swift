@@ -18,7 +18,7 @@ enum ViewState {
     /// State when new data is available to the view
     case ready
     /// State when an error has occured and should be reflected in the view
-    case error(Error)
+    case error(AppError)
 }
 
 
