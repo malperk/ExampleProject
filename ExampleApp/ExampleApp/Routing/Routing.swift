@@ -17,11 +17,11 @@ protocol Routing {
 }
 
 
-final class MainRouter: Routing {
+class MainRouter: Routing {
 
     private var navigationController: UINavigationController?
 
-    enum Route {
+    enum Route: Equatable {
         case login(String)
         case confirmation
     }
