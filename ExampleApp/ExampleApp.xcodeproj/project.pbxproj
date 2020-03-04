@@ -21,6 +21,7 @@
 		B9CE466324103BBC007CF966 /* ConnectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE466224103BBC007CF966 /* ConnectionInteractor.swift */; };
 		B9CE466524103DE9007CF966 /* ConnectionInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE466424103DE9007CF966 /* ConnectionInteractorTests.swift */; };
 		B9CE466A24103E8C007CF966 /* MockNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE466924103E8C007CF966 /* MockNetworking.swift */; };
+		B9CE466D241041A6007CF966 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE466C241041A6007CF966 /* Routing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B9CE466224103BBC007CF966 /* ConnectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionInteractor.swift; sourceTree = "<group>"; };
 		B9CE466424103DE9007CF966 /* ConnectionInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionInteractorTests.swift; sourceTree = "<group>"; };
 		B9CE466924103E8C007CF966 /* MockNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworking.swift; sourceTree = "<group>"; };
+		B9CE466C241041A6007CF966 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		B9CE462924102F4D007CF966 /* ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				B9CE466B2410418E007CF966 /* Routing */,
 				B9CE465E2410399D007CF966 /* AppError */,
 				B9CE465B241037CF007CF966 /* AlertController */,
 				B9CE4652241032F0007CF966 /* Nerworking */,
@@ -166,6 +169,14 @@
 				B9CE466924103E8C007CF966 /* MockNetworking.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B9CE466B2410418E007CF966 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				B9CE466C241041A6007CF966 /* Routing.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CE466D241041A6007CF966 /* Routing.swift in Sources */,
 				B9CE465824103435007CF966 /* ViewStateProviding.swift in Sources */,
 				B9CE4654241032FF007CF966 /* Networking.swift in Sources */,
 				B9CE465A24103557007CF966 /* Validating.swift in Sources */,
